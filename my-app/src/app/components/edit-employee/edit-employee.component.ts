@@ -35,13 +35,8 @@ export class EditEmployeeComponent {
   }
   */
   updateEmployee(employee: Employee) {
-    this.employee = new Employee();
+    this.employee = undefined;
     this.employeeService.updateEmployee(employee)
-    .subscribe((employees: Employee[]) => this.employeesUpdated.emit(employees));
-  }
-  createEmployee(employee: Employee) {
-    this.employee = new Employee();
-    this.employeeService.createEmployee(employee)
     .subscribe((employees: Employee[]) => this.employeesUpdated.emit(employees));
   }
 }

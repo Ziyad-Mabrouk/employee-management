@@ -14,7 +14,6 @@
         <input [id]="phone" [(ngModel)]="employee.phone" placeholder="phone">
     </div>
     <div class="buttons">
-        <button class="add button" (click)="createEmployee(employee)" *ngIf="!employee.id">Add</button>
         <button class="update button" (click)="updateEmployee(employee)" *ngIf="employee.id">Update</button>
         <!--<button class="delete button" (click)="deleteEmployee(employee.id)" *ngIf="employee.id">Delete</button>-->
     </div>
