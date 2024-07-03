@@ -1,0 +1,25 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+my-app/dist
+my-app/tmp
+my-app/out-tsc
+my-app/bazel-out
+
+# Node
+my-app/node_modules
+
+# visual studio
+EmployeeAPI/.vs
+
+# visual studio code
+my-app/.vscode
+
+# Miscellaneous
+my-app/.angular/cache
+my-app/.sass-cache/
+my-app/connect.lock
+my-app/coverage
+my-app/libpeerconnection.log
+my-app/testem.log
+my-app/typings

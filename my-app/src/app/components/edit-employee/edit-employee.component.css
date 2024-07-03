@@ -1,0 +1,113 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgba(10, 94, 13, 0.541);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    margin-bottom: 8px;
+}
+
+label {
+    margin-bottom: -3px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4px;
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+.add {
+    background: #0c9019;
+    border: 1px solid #0c9019;
+}
+.add:hover {
+    background: #0c9019;
+    color: #0c9019;
+}
+
+.delete {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+}
+.delete:hover {
+    background: #FF4742;
+    color: #FF4742;
+}
+
+.update {
+    background: #d6a233;
+    border: 1px solid #d6a233;
+}
+.update:hover {
+    background: #d6a233;
+    color: #d6a233;
+}
+
+.button {
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  /*margin-bottom: 15px;*/
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+}
+
+.button:active {
+  opacity: .5;
+}

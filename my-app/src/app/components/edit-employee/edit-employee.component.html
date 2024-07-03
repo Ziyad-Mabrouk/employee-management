@@ -1,0 +1,21 @@
+<div class="form-container" *ngIf="employee">
+    <!--<h2>{{ employee.firstName + " " + employee.lastName }}</h2>-->
+    <div class="edit-form">
+        <label [for]="firstName">First Name:</label>
+        <input [id]="firstName" [(ngModel)]="employee.firstName" placeholder="first name">
+
+        <label [for]="lastName">Last Name:</label>
+        <input [id]="lastName" [(ngModel)]="employee.lastName" placeholder="last name">
+
+        <label [for]="email">Email:</label>
+        <input [id]="email" [(ngModel)]="employee.email" placeholder="email">
+
+        <label [for]="phone">Phone:</label>
+        <input [id]="phone" [(ngModel)]="employee.phone" placeholder="phone">
+    </div>
+    <div class="buttons">
+        <button class="add button" (click)="createEmployee(employee)" *ngIf="!employee.id">Add</button>
+        <button class="update button" (click)="updateEmployee(employee)" *ngIf="employee.id">Update</button>
+        <!--<button class="delete button" (click)="deleteEmployee(employee.id)" *ngIf="employee.id">Delete</button>-->
+    </div>
+</div>
